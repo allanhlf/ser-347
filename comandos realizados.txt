@@ -1,0 +1,81 @@
+---- Descrição dos procedimentos realizados na criação e construção da página no site GITHUB e instalação do GIT GUI na máquina para conexão dos dados ----
+
+* Mestrando: Allan Lima
+* Docentes: Dr. Gilberto Queiroz e Thales Korting
+* Disciplina: SER-347
+* Atividade desenvolvida: Lista de Exercícios 01 - Exercício 01 - Seção 3.1
+* Atividade referente a essa descriçao em txt. - Lista de Exercícios 01 - Exercício 04
+
+* A base para a realização dessa atividade foi feita a partir do tutorial disponibilizado pelos professores na página  
+'https://prog-geo.github.io/variados/git-github/git-comandos.html'.
+* Seguindo os procedimentos descritos nessa página, a atividade foi realizada da seguinte forma:
+
+# 1 Primeiro foi criada uma conta no site 'http://github.com/' para poder ter acesso as suas funcionalidades e recursos.
+# 1.1 Logo depois foi gerado o repositório na paginá pessoal do GitHub ('https://github.com/allanhlf'), nomeada de 'ser-347' com a linguagem Python escolhida para o modelo. 
+Ao final o sistema criou o respositório onde foram inseridos inicialmente os sequintes arquivos:
+- README
+-.gitigonre
+- LICENSE
+
+# 2 Depois, conforme indicação do tutorial, iniciou-se a modelagem do repostório com algumas modificações e inserções de arquivos:
+
+# 2.1  Para conseguir fazer essa ligação entre servidor e máquina, no meu caso, usuário de Windonws 8.1, foi feita a instalação do programa GIT GUI no pc.
+# 2.1.1 Foi criada uma pasta especifica na máquina para realizar essas tarefas e a inserção da cópia do repositório:
+Após isso, com a instalação completa e com o prompt de comando aberto às instruções começaram serem realizadas.
+
+# 2.2 Clonagem do respositório ser-347: copia local do nosso repositório para podermos trabalharmos com nossos códigos:
+   Comandos realizados:
+  - cd C:\Users\Allan Lima\Documents\Documentos INPE\1° TRIMESTRE\SER-347-3 - INTRODUÇÃO A PROGRAMAÇÃO PARA SR - THALES\git_hub\ser-347 (conexão com a pasta criada)
+	- git clone https://github.com/allanhlf/ser-347 // Feita a cópia do repositório nessa pasta
+
+# 2.3 Apresentação de uma listagem dos arquivos do repositório local (sistema operacional já conectado com a pasta do repositório local)
+    Comando realizado:
+	- dir // O resultado foi: .gitigonre // README.md //LICENSE
+	
+# 2.4 Sincronização repositório GITHUB (Site) e repositório local:
+    Comando realizado: 
+  - git status (verificou que os arquivos estavam atualizados)
+   
+  # 2.4.1 Foi feita uma modificacao no arquivo txt. 'Readme.md' conforme descrito no tutorial e foi checado o status do repositório novamente:
+   
+  - git status (verificou que os arquivos estavam desatualizados (modified))
+  - git checkout -- README.md (voltou ao texto anterior - procedimento de teste)
+  - git status (verificou que os arquivos estavam novamente atualizados)
+  
+  # 2.4.2 Novamente foi feita a modificacao no arquivo txt. 'Readme.md' conforme descrito no tutorial, mas desta vez o texto inserido seria o novo padrão do txt. 
+    Sendo esse o novo padrão, foi necessário atualizar o repositório remoto:
+    Comandos realizados:
+  - git add README.md (para incluir esse arquivo na lista a ser confirmada como atualização do nosso repositório local)
+  - git status (inserido para visualizar a confirmação desse procedimento)
+  - git commit -m "Primeira versão do arquivo README.md" (comando feito para confirmar e salvar todas as modificações realizadas até aqui na estrutura dos arquivos do nosso repositório)
+	
+  # 2.4.3  Nesse momento era necessário realizar a sincronização dessas mudanças com o repositório remoto:
+    Comandos realizados:
+  - git push // Fez a conexão com o site GUI HUB atraves da inserção do login e senha da página para poder liberar o acesso e atualizacao dos dados e atualizou os dados
+  - git pull //verificou que a pasta estava atualizada com a remota // "Already up to date"
+  # Já no site do GIT HUB foi visto que os dados estavam atualizados conforme as alterações realizadas.
+		
+# 3 Adição de um novo arquivo ao repositório remoto
+    Comandos realizados:
+  - criação do arquivo fatorial.py no site GIT HUB 
+	- git status (indicou o arquivo que foi inserido:
+	  Untracked File: 'fatorial.py'
+	- git add (nada foi mostrado pelo meu prompt)
+  - git pull - comando já foi realizado direto e o arquivo fatorial.py já estava inserido no repositório local.
+  
+  ***) commit desse arquivo foi inserido na própria opção disponibilizada na página do GIT HUB no site.
+  
+	
+  # 4 Adição de um arquivo extra:
+  - Criação do arquivo 'Conversor de temperatura.py' no site GIT HUB 
+	- git status (indicou o arquivo que foi inserido:
+	  Untracked File: 'Conversor de temperatura.py'
+	- git add (nada foi mostrado pelo meu prompt)
+  - git pull - comando já foi realizado direto e o arquivo 'Conversor de temperatura.py' já estava inserido no repositório local.
+  
+   ***Para esse arquivo 'comandos realizados.txt' foi realizado o mesmo procedimento da descrição #4 para atualização do repositório local.
+   ***O commit desses arquivo foram inseridos na própria opção disponibilizada na página do GIT HUB no site.
+
+Autor: Allan Lima.
+
+  
