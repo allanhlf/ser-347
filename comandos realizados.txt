@@ -17,9 +17,9 @@ Ao final o sistema criou o respositório onde foram inseridos inicialmente os se
 -.gitigonre
 - LICENSE
 
-# 2 Depois, conforme indicação do tutorial, iniciou-se a modelagem do repostório com algumas modificações e inserções de arquivos:
+# 2 Depois, conforme indicação do tutorial, iniciou-se a modelagem do repostório com algumas modificações nos arquivos:
 
-# 2.1  Para conseguir fazer essa ligação entre servidor e máquina, no meu caso, usuário de Windonws 8.1, foi feita a instalação do programa GIT GUI no pc.
+# 2.1 Para conseguir fazer essa ligação entre servidor e máquina, no meu caso, usuário de Windonws 8.1, foi feita a instalação do programa GIT GUI no pc.
 # 2.1.1 Foi criada uma pasta especifica na máquina para realizar essas tarefas e a inserção da cópia do repositório:
 Após isso, com a instalação completa e com o prompt de comando aberto às instruções começaram serem realizadas.
 
@@ -61,7 +61,7 @@ Após isso, com a instalação completa e com o prompt de comando aberto às ins
   - git status (Não indicou o arquivo que foi inserido)
   - git pull - comando já foi realizado direto e o arquivo fatorial.py foi inserido no repositório local.
   
-  ***) commit desse arquivo foi inserido na própria opção disponibilizada na página do GIT HUB no site.
+  ***Commit desse arquivo foi inserido na própria opção disponibilizada na página do GIT HUB no site.
   
 	
   # 4 Adição de um arquivo extra:
